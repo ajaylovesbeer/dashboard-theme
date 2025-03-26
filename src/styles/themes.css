@@ -1,0 +1,268 @@
+/* Theme Styles */
+.theme-card {
+  border-radius: 6px;
+  border: 1px solid #e1e5e9;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: white;
+}
+
+.theme-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-card.selected {
+  border: 2px solid #0066B3;
+}
+
+.theme-preview {
+  height: 110px;
+  width: 100%;
+}
+
+.theme-info {
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+}
+
+.theme-color-dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.color-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* Logo Upload Styles */
+.logo-upload-container {
+  background-color: #f0f4f8;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-dropzone {
+  border: 2px dashed #c0c9d2;
+  border-radius: 6px;
+  padding: 40px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logo-dropzone:hover, .logo-dropzone.active {
+  border-color: #0066B3;
+  background-color: rgba(0, 102, 179, 0.05);
+}
+
+.logo-preview-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo-preview-header h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.logo-preview-container-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 24px;
+}
+
+.logo-preview-box {
+  width: 45%;
+  max-width: 300px;
+}
+
+.logo-preview-label {
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.logo-preview-dimensions {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.logo-preview-container {
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #002442;
+  margin-bottom: 0;
+}
+
+.expanded-view {
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.collapsed-view {
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-actions {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Dashboard Customization Page */
+.dashboard-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.customization-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e1e5e9;
+  position: sticky;
+  top: var(--header-height);
+  background-color: var(--background-color);
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.customization-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.customization-header .text-muted {
+  margin-top: 4px;
+}
+
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.theme-selector h2, .logo-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.logo-section {
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #0066B3;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0055a0;
+}
+
+.btn-secondary {
+  background-color: #f5f7fa;
+  color: #334155;
+  border: 1px solid #e1e5e9;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #e9ecf1;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Utility Classes */
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-4 {
+  margin-bottom: 20px;
+}
+
+.text-muted {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Use the side panel styles based on the selected theme */
+.side-panel-navy {
+  background-color: #0D2436;
+}
+
+.side-panel-teal {
+  background-color: #00574B;
+}
+
+.side-panel-blue {
+  background-color: #0066B3;
+}
+
+.side-panel-indigo {
+  background-color: #1A237E;
+}
+
+.side-panel-dark {
+  background-color: #121212;
+}
+
+.dashboard-customization {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.customization-content {
+  padding: 20px;
+}
